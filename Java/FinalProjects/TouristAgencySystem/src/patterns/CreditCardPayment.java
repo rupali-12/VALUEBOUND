@@ -1,0 +1,22 @@
+package patterns;
+
+public class CreditCardPayment implements PaymentStrategy {
+    private String cardNumber;
+    private String cardHolderName;
+    private String expiryDate;
+    private String cvv;
+
+    public CreditCardPayment(String cardNumber, String cardHolderName, String expiryDate, String cvv) {
+        this.cardNumber = cardNumber;
+        this.cardHolderName = cardHolderName;
+        this.expiryDate = expiryDate;
+        this.cvv = cvv;
+    }
+
+    @Override
+    public void pay(double amount) {
+        // Implement payment with credit card
+        System.out.println("Paid " + amount + " using Credit Card.");
+    }
+}
+
