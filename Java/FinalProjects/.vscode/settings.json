@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/*.jar"  // Path to your JAR file, adjust as necessary
+    ]
+}
+
